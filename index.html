@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+     
+    <nav class="navbar">
+        <div class="navbar-logo">Click Here To See Menu</div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rent.html">Rent</a></li>
+                <li><a href="./material.html">Models</a></li>
+                <li><a href="./customers.html">Customers</a></li>
+                <li><a href="./history.html">History</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    
+    
+      <section class="start-section">
+        <div>
+          <h1>GBD Yatch Rent</h1>
+          <p>Discover the Splendor of the Sea.</p>
+          <button class="cta-button" >  <a href="rent.html">Lets Start</a></button>
+        </div>
+      </section>
+    
+
+
+      <section class="pages-section" >
+        <a href="./material.html">
+            <div class="pages1" >
+
+                <h2 style="color: bisque;">
+                  
+                  Our Models
+                  
+              </h2 >
+                <h5 style="color: bisque;">Choose one and start to write your story!</h3>
+              </div>
+        </a>
+        
+
+        <a href="./customers.html"> 
+            <div class="pages2">
+                <h2 style="color: dimgray;" >Our Customers</h2>
+                <h5 style="color: dimgray;">We strengthen our references with our  customers</h5>
+              </div>
+        </a>
+       
+        <br>
+
+        <a href="./history.html">
+            <div class="pages3">
+                <h2 style="color: dimgray;">Our History</h2>
+                <h5 style="color: dimgray;">"Our history Where our quality comes from"</h5>
+              </div>
+      
+        </a>
+        
+        <a href="./game.html">
+            <div class="pages4">
+                <h2 style="color: bisque;">Game</h2>
+                <h5 style="color: bisque;">Lets play a great sailing game and have fun</h5>
+              </div>
+    
+
+        </a>
+        
+
+      </section>
+
+
+
+      <div class="form-container">
+        <h2 class="animate__animated animate__fadeInDown">Contact Us</h2>
+        <form id="myForm">
+          <div class="form-group animate__animated animate__fadeInLeft">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group animate__animated animate__fadeInRight">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group animate__animated animate__fadeInLeft">
+            <label for="message">Your mesage:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group animate__animated animate__fadeInRight">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+
+
+      
+      <footer class="footer">
+        <p>Copyright &copy; 2023. GBD Yatch Club. All rights reserved.</p>
+      </footer>
+
+
+    
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar').click(function() {
+                $('.navbar-menu').slideToggle();
+            });
+
+            $('.navbar-menu li a').click(function() {
+                $(this).toggleClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yacths</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar').click(function() {
+                $('.navbar-menu').slideToggle();
+            });
+
+            $('.navbar-menu li a').click(function() {
+                $(this).toggleClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+    <nav class="navbar">
+        <div class="navbar-logo">Click Here To See Menu</div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rent.html">Rent</a></li>
+                <li><a href="./material.html">Models</a></li>
+                <li><a href="./customers.html">Customers</a></li>
+                <li><a href="./history.html">History</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+  <section id="hero" class="blue darken-3 white-text">
+    <div class="container">
+      <h1 class="center-align">Luxury Yachts</h1>
+      <p class="center-align">Welcome to GBD Yatch Club, Choice of champions!</p>
+    </div>
+  </section>
+
+  <section id="about" class="grey lighten-5">
+    <div class="container">
+      <h2 class="center-align">Why Yatch</h2>
+      <p>Yacht charter service is the perfect choice for those seeking an enjoyable and unforgettable sea adventure. This service allows individuals to feel like temporary yacht owners, providing them with a unique experience. Yacht chartering offers numerous advantages over traditional hotel accommodations.
+
+        One of the greatest advantages of yacht charter service is freedom and flexibility. When you charter a yacht, you have the freedom to determine your travel route, destination points, and duration of the trip. Staying aboard a private yacht allows you to independently explore and visit any location at your own pace. This offers a distinct experience beyond the constraints of typical tourist itineraries.</p>
+    </div>
+  </section>
+
+
+
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .yat {
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .yat h3 {
+        margin: 0;
+        padding: 15px;
+        font-size: 18px;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #e0e0e0;
+        color: #333333;
+        cursor: pointer;
+    }
+
+    .aciklama {
+        display: none;
+        padding: 15px;
+        background-color: #ffffff;
+        color: #666666;
+        line-height: 1.6;
+    }
+
+    .aciklama p:first-child {
+        margin-top: 0;
+    }
+
+    .aciklama ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .aciklama ul li {
+        margin-bottom: 5px;
+    }
+
+    .aciklama ul li:before {
+        content: "\2022";
+        color: #666666;
+        font-size: 12px;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .yat .foto {
+        position: relative;
+        padding-bottom: 25%;
+    }
+
+    .yat .foto img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .active {
+        background-color: #e0e0e0;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function() {
+        $(".yat h3").click(function() {
+            $(this).toggleClass("active");
+            $(this).next(".aciklama").slideToggle("fast");
+        });
+    });
+</script>
+</head>
+<body>
+<div class="yat">
+    <h3>Sea Ray Sundancer</h3>
+    <div class="aciklama">
+        <div class="foto">
+            <img src="./img/yatch1.jpg" alt="Yat 1">
+        </div>
+        <div class="icerik">
+            <p>It has a modern design that offers a luxurious living space. It offers an unforgettable holiday experience with its large deck area and swimming pool.</p>
+            <p>Features:</p>
+            <ul>
+                <li>Number of Bedrooms: 4</li>
+                <li>Number of Bathrooms: 3</li>
+                <li>Maximum Capacity: 10 people</li>
+                <li>Equipment: Air conditioning, TV, Wi-Fi</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="yat">
+    <h3>Azimut Flybridge</h3>
+    <div class="aciklama">
+        <div class="foto">
+            <img src="./img/yatch2.jpg" alt="Yat 2">
+        </div>
+        <div class="icerik">
+            <p>It has a stylish and modern design and draws attention with its spacious interiors illuminated by large windows..</p>
+            <p>Features:</p>
+            <ul>
+                <li>Number of Bedrooms: 3</li>
+                <li>Number of Bathrooms: 2</li>
+                <li>Maximum Capacity: 8 people</li>
+                <li>Equipment: Air conditioning, TV, Wi-Fi</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="yat">
+    <h3>Ferretti Yachts</h3>
+    <div class="aciklama">
+        <div class="foto">
+            <img src="./img/yatch3.jpg" alt="Yat 3">
+        </div>
+        <div class="icerik">
+            <p>It has an elegant exterior design and its interiors offer a cozy and comfortable living space. It provides a pleasant travel opportunity with its large deck area.</p>
+            <p>Özellikler:</p>
+            <ul>
+                <li>Number of Bedrooms: 5</li>
+                <li>Number of Bathrooms: 4</li>
+                <li>Maximum Capacity: 12 people</li>
+                <li>Equipment: Air conditioning, TV, Wi-Fi</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="yat">
+    <h3>Sunseeker Manhattan</h3>
+    <div class="aciklama">
+        <div class="foto">
+            <img src="./img/yatch4.jpg" alt="Yat 4">
+        </div>
+        <div class="icerik">
+            <p>This yacht has a modern and stylish design and offers a fun holiday experience with its large deck area and water sports equipment.</p>
+            <p>Features:</p>
+            <ul>
+                <li>Number of Bedrooms: 6</li>
+                <li>Number of Bathrooms: 5</li>
+                <li>Maximum Capacity: 14 people</li>
+                <li>Equipment: Air conditioning, TV, Wi-Fi</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="yat">
+    <h3>Princess Yachts</h3>
+    <div class="aciklama">
+        <div class="foto">
+            <img src="./img/yatch5.jpg" alt="Yat 5">
+        </div>
+        <div class="icerik">
+            <p>This yacht has a modern and minimalist design and offers a comfortable holiday experience with stylish interiors and ample deck space.</p>
+            <p>Features:</p>
+            <ul>
+                <li>Number of Bedrooms: 2</li>
+                <li>Number of Bathrooms: 1</li>
+                <li>Maximum Capacity: 4 people</li>
+                <li>Equipment: Air conditioning, TV, Wi-Fi</li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

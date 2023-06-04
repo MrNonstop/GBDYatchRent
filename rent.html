@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/yatchClub.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rent</title>
+</head>
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $('.navbar').click(function() {
+              $('.navbar-menu').slideToggle();
+          });
+
+          $('.navbar-menu li a').click(function() {
+              $(this).toggleClass('active').siblings().removeClass('active');
+          });
+      });
+  </script>
+  <nav class="navbar">
+      <div class="navbar-logo">Click Here To See Menu</div>
+      <div class="navbar-menu">
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./rent.html">Rent</a></li>
+              <li><a href="./material.html">Models</a></li>
+              <li><a href="./customers.html">Customers</a></li>
+              <li><a href="./history.html">History</a></li>
+
+          </ul>
+      </div>
+  </nav>
+    
+      <div class="product-container">
+        <div class="product">
+          <br><br><br><br><br><br>
+          <label for="productSelect">Choose your yatch</label>
+          <!-- <a style="font-family: Georgia, 'Times New Roman', Times, serif;" href="./index.html"> Return to Main Page</a> -->
+          <select id="productSelect" onchange="updateProductDetails()">
+            <option value="0">Models</option>
+            <option value="1">Sea Ray Sundancer</option>
+            <option value="2">Azimut Flybridge</option>
+            <option value="3">Ferretti Yachts</option>
+            <option value="4">Sunseeker Manhattan</option>
+            <option value="5">Princess Yachts</option>
+          </select>
+        </div >
+        <div style="display: flex;" >
+          <img style="height:300px; width: 300px;display: block; align-items: center;" src="/img/logo.jpg" alt="">
+          
+          <style>
+            .calendar {
+              max-width: 400px;
+              margin: 50px auto;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="calendar">
+            <input type="text" id="datepicker" placeholder="Choose Date">
+          </div>
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script>
+            $(function() {
+              $("#datepicker").datepicker();
+            });
+          </script>
+
+        </div>
+        
+        <div id="productImage">
+            
+        </div>
+        <div id="price" value="0"></div>
+        <div class="product">
+          <label for="processor">Night Festivities</label>
+          <select id="processor" onchange="updateTotalPrice()">
+            <option value="0">No (0 $)</option>
+            <option value="500">Party (+500 $)</option>
+            <option value="1000">Party + Drink (+1000 $)</option>
+          </select>
+        </div>
+        <div class="product">
+          <label for="ram">Coast Tour:</label>
+          <select id="ram" onchange="updateTotalPrice()">
+            <option value="0">Standart (0 $)</option>
+            <option value="300"> 1 Extra (+300 $)</option>
+            <option value="600">2 Extra (+600 $)</option>
+          </select>
+        </div>
+        <div class="product">
+          <label for="storage">Dinner:</label>
+          <select id="storage" onchange="updateTotalPrice()">
+            <option value="0">Standart (0 $)</option>
+            <option value="200">Greek Cousine (+200 $)</option>
+            <option value="400">French Cousine (+400 $ )</option>
+            <option value="800">Turkish Cousine (+800 $)</option>
+          </select>
+        </div>
+        <div class="total-price">
+          Price: <span id="totalPrice">0 $</span>
+        </div>
+      </div>
+    
+      
+</body>
+</html>

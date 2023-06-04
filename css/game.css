@@ -1,0 +1,117 @@
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+  }
+  
+  #game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 700px;
+    height: 400px;
+    margin: 60px auto;
+    background-color: white;
+    position: relative;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+  }
+
+  #game-name{
+    color: dodgerblue;
+    margin: 15px;
+  }
+  
+  #score {
+    color: dodgerblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  #start-menu {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  #start-menu button {
+    display: block;
+    margin: 15px auto;
+  }
+  
+  #game-over-menu {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #game-over-text {
+    font-size: 30px;
+    color: dodgerblue;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 30px 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: dodgerblue;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: lightblue;
+  }
+
+  #instructions-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  #instructions-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  #instructions-box h2 {
+    text-align: center;
+    font-size: 24px;
+    color: dodgerblue;
+  }
+  
+  #instructions-box p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  #close-instructions-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: dodgerblue;
+    text-align: center;
+  }

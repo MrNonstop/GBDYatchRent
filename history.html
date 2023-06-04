@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+        .testimonial {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+
+        .testimonial-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-content p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar').click(function() {
+                $('.navbar-menu').slideToggle();
+            });
+
+            $('.navbar-menu li a').click(function() {
+                $(this).toggleClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+    <nav class="navbar">
+        <div class="navbar-logo">Click Here To See Menu</div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rent.html">Rent</a></li>
+                <li><a href="./material.html">Models</a></li>
+                <li><a href="./customers.html">Customers</a></li>
+                <li><a href="./history.html">History</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="testimonial" style="background-image: url('image1.jpg');">
+                    <div class="testimonial-content">
+                        <h3>Quality Policy</h3>
+                        <p>"Our quality policy is based on excellence and customer satisfaction. We apply the highest standards for the maintenance, cleanliness and safety of our yachts. Our experienced and hospitable staff are committed to providing an unforgettable travel experience, with individual attention to each of our customers."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="testimonial" style="background-image: url('image2.jpg');">
+                    <div class="testimonial-content">
+                        <h3>Experience</h3>
+                        <p>"As a company operating in the yacht charter industry for over 20 years, we have rich experience. During this time we have served many customers and exceeded their expectations. We are constantly improving ourselves and producing innovative solutions to provide the best service in the industry with our experience."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="testimonial" style="background-image: url('image3.jpg');">
+                    <div class="testimonial-content">
+                        <h3>Our Yacht Fleet</h3>
+                        <p>"By offering a wide range of options, our yacht fleet aims to provide our customers with options suitable for various needs. We have a fleet of yachts of different types and sizes, such as luxury motor yachts, sailing yachts, catamarans and more. We offer variety to enable our clients to choose the most suitable yacht according to their preferences."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="testimonial" style="background-image: url('image4.jpg');">
+                    <div class="testimonial-content">
+                        <h3>Reliability and Privacy</h3>
+                        <p>"As a company that prioritizes customer satisfaction and trust, we attach great importance to the principles of reliability and confidentiality. We are committed to keeping the personal and financial information of our customers confidential and keeping data about yacht reservations safe. In addition, we provide services in accordance with high security standards with our experienced and competent staff."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <h2>Vision & Mission</h2>
+                <p>At GDB Yacht Rental, our vision is to provide unparalleled yacht charter experiences that leave a lasting impression. We strive to create unforgettable memories for our clients, delivering exceptional service and ensuring their utmost satisfaction.</p>
+                <p>Our mission is to be the leading yacht rental company, offering a diverse fleet of luxurious yachts, professional crew, and personalized itineraries. We are committed to delivering excellence in every aspect of our services and making our clients' dreams come true at sea.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <h2>Contact Us</h2>
+                <p>For inquiries or reservations, please feel free to contact us. Our friendly team is ready to assist you.</p>
+                <p><strong>Email:</strong> info@gdbyachtrental.com</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>
